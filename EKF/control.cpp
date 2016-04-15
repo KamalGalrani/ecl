@@ -344,6 +344,7 @@ void Ekf::controlFusionModes()
 	if (false) {
 		_control_status.flags.wind = false;
 	}
+	_control_status.flags.wind = true;
 
 	// Store the status to enable change detection
 	_control_status_prev.value = _control_status.value;
